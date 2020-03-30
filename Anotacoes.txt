@@ -2,11 +2,11 @@
 1 - yarn init -y (Criar package.json com as dependencias)
 2 - yarn add express (servidor rest)
 3 - yarn add sucrase nodemon -D     #Sucrase (para facilitar as importações no Node) (alterar package.json e criar nodemon.json)
-4 - 
-5 - 
-6 - 
-7 - 
-8 - 
+4 - docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres:11 (Criando um Container Docker)
+5 - docker ps (Mostra os containers em exe e --all mostra todos) docker rm name(exclui o container)
+6 -  yarn add sequelize && yarn add sequelize-cli -D
+7 - create ".sequelizerc" import files config 
+8 - yarn add pg pg-hstore (dependencias para utilização de postgres)
 9 - 
 10 - 
 11 - 
@@ -32,7 +32,40 @@
 
 
 
+#### Anotações #####
 
 
+    #Sequelize 
+        - ORM Para banco de dados SQL
+        - Forma de abstralção do banco de dados
+        - Tabela viram Models
+        - Manipulados por Javascript
+
+        Migrations 
+            - Controle de versão para a base de dados
+            - Cada arquivo contém instrução para criação, alteração ou remoção de tabelas ou colunas
+            - Manté a base de dados atualizadas entre os devs e é ordenada por data
+        Seeds 
+            - Populam a base de dados para testes
 
 
+    #Arquiterura MVC
+        Model - Armazena a abstração do banco, não possuem responsabilidade sobre as regras de negócio da aplicação
+        
+        Controller -  O controller é o pornto de entrada das requisições,uma rota está associada a 
+                      uma regra de negócio.
+        
+        View - Retorno ao cliente.
+
+        Controller 
+            Classes
+            retorna json
+            não chama outro controller/método
+            quando criar? apenas 5 métodos e/ou nova entidade
+
+        Métodos Controller  
+            index - Listagem de Usuários 
+            Show - Exibir um único Usuário
+            Store - Cadastrar usuário 
+            Update - Alterar usuário
+            Delete - Remover usuário
