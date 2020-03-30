@@ -1,10 +1,10 @@
-const { Router} = require('express'); // Forma de importar o Router para o APP.js
+import { Router} from 'express'; // Forma de importar o Router para o APP.js
 
 const routes = new Router();
 
 routes.get('/', (req, res) => {
-    return res.json({message: 'Hello World'})
+    return res.json({message: 'Hello World teste '})
 })
 
 
-module.exports = routes; //está sendo executado em app.js
+export default routes; //está sendo executado em app.js

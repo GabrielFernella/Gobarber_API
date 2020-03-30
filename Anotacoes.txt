@@ -1,7 +1,7 @@
 
 1 - yarn init -y (Criar package.json com as dependencias)
 2 - yarn add express (servidor rest)
-3 - 
+3 - yarn add sucrase nodemon -D     #Sucrase (para facilitar as importações no Node) (alterar package.json e criar nodemon.json)
 4 - 
 5 - 
 6 - 
@@ -29,3 +29,10 @@
 28 - 
 29 - 
 30 - 
+
+
+
+
+
+
+
