@@ -12,7 +12,7 @@
 11 - yarn sequelize db:undo:all ou :undo para desfazer as migrations
 12 - yarn add bcryptjs (para criar criptofrafia das senhas)
 13 - yarn add jsonwebtoken (ou npm , para instalar o JWT)
-14 - 
+14 - yarn add yup
 15 - 
 16 - 
 17 - 
@@ -71,3 +71,5 @@ Substituir todos pelo "npm" se possível
             Delete - Remover usuário
 
     # JWT (Autenticação em Token)
+
+    #Yup (Biblioteca de Schema Validation )
