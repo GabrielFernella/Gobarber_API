@@ -1,46 +1,46 @@
 Pacotes instalados
-1 - yarn add multer
-2 - yarn add date-fns@next
-3 - 
-4 - 
-5 - 
-6 -
-7 -
-8 - 
-9 -
-10 - 
+    1 - yarn add multer
+    2 - yarn add date-fns@next
+    3 - 
+    4 - 
+    5 - 
+    6 -
+
 
 Ordem de Processo
-1 - Criar pasta temp ,Criação do app/config/multer.js e edição em routes.js
-2 - create Avatar , FileController.js , create migration (create-files) and Model 'File.js' , edit index in database
-3 - create migration 'add-avatar-field-to-users' (conexão com a tabela Users)
-4 - listagem de providers, route.js, ProviderController, app.js and others
-5 - Create migration appointment, create Model appointment, create Controller Appointment
-6 - Rota de agendamento (Controller) e outros
-7 - Validações dos Agendamentos (Appointment) usando Date-fns
-8 - 
-9 -
-10 - 
-11 - 
-12 - 
-13 - 
-14 - 
-15 - 
-16 -
-17 -
-18 - 
-19 -
-20 - 
+    1 - Criar pasta temp ,Criação do app/config/multer.js e edição em routes.js
+    2 - create Avatar , FileController.js , create migration (create-files) and Model 'File.js' , edit index in database
+    3 - create migration 'add-avatar-field-to-users' (conexão com a tabela Users)
+    4 - listagem de providers, route.js, ProviderController, app.js and others
+    5 - Create migration appointment, create Model appointment, create Controller Appointment
+    6 - Rota de agendamento (Controller) e outros
+    7 - Validações dos Agendamentos (Appointment) usando Date-fns
+    8 - Mais validações na listagem de agendamentos(index)
+    9 - Create ScheduleController (para fazer a lsitagens de agendamentos do Provider) (Conceitos de date between)
+    10 - 
+    11 - 
+    12 - 
+    13 - 
+    14 - 
+    15 - 
+    16 -
+    17 -
+    18 - 
+    19 -
+    20 - 
 
 New table in database
-    yarn sequelize db:migrate:undo:all  
-    yarn sequelize db:migrate
-1 - yarn sequelize migration:create --name=create-files
-2 - yarn sequelize migration:create --name=add-avatar-field-to-users
-3 - yarn sequelize migration:create --name=create-appointments
-4 - 
-5 - 
-6 - 
+        yarn sequelize db:migrate:undo:all  
+        yarn sequelize db:migrate
+    1 - yarn sequelize migration:create --name=create-files
+    2 - yarn sequelize migration:create --name=add-avatar-field-to-users
+    3 - yarn sequelize migration:create --name=create-appointments
+    4 - 
+    5 - 
+    6 - 
 
 Mais Informações
 
+    Protocolo de Criação
+        - Criar o Model e atualizar o index do database
+        - Criar o Controller e atualizando as rotas

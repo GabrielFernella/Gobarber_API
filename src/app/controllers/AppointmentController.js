@@ -6,14 +6,18 @@ import * as Yup from 'yup';
 
 class AppointmentController {
     async index(req, res){
+        const { page = 1} = req.query;
+
         const appointment = await Appointment.findAll({
             where: { user_id: req.userId, canceled_at: null},
-            order: ['date'],
-            attributes: ['id', 'date'],
-            include: [
+            order: ['date'], //ordenar
+            limit:20, //limite de 20 por pagina
+            offset: (page -1) * 20, //para pular 20 quando a pagina for maior que 1
+            attributes: ['id', 'date'], //atributos que são retornados
+            include: [ //incluir valor de outras tabelas
                 {
-                    model: User,
-                    as: 'provider',
+                    model: User, //nome da tabela
+                    as: 'provider', //identificação
                     attributes: ['id', 'name'],
                     include: [
                         {
