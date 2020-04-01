@@ -1,6 +1,6 @@
 Pacotes instalados
 1 - yarn add multer
-2 - 
+2 - yarn add date-fns@next
 3 - 
 4 - 
 5 - 
@@ -16,8 +16,8 @@ Ordem de Processo
 3 - create migration 'add-avatar-field-to-users' (conexão com a tabela Users)
 4 - listagem de providers, route.js, ProviderController, app.js and others
 5 - Create migration appointment, create Model appointment, create Controller Appointment
-6 -
-7 -
+6 - Rota de agendamento (Controller) e outros
+7 - Validações dos Agendamentos (Appointment) usando Date-fns
 8 - 
 9 -
 10 - 
