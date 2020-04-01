@@ -15,7 +15,7 @@ Ordem de Processo
 2 - create Avatar , FileController.js , create migration (create-files) and Model 'File.js' , edit index in database
 3 - create migration 'add-avatar-field-to-users' (conexão com a tabela Users)
 4 - listagem de providers, route.js, ProviderController, app.js and others
-5 - 
+5 - Create migration appointment, create Model appointment, create Controller Appointment
 6 -
 7 -
 8 - 
@@ -37,9 +37,10 @@ New table in database
     yarn sequelize db:migrate
 1 - yarn sequelize migration:create --name=create-files
 2 - yarn sequelize migration:create --name=add-avatar-field-to-users
-3 - 
-
-
+3 - yarn sequelize migration:create --name=create-appointments
+4 - 
+5 - 
+6 - 
 
 Mais Informações
 
