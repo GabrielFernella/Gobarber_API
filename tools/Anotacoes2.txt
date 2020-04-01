@@ -12,9 +12,9 @@ Pacotes instalados
 
 Ordem de Processo
 1 - Criar pasta temp ,Criação do app/config/multer.js e edição em routes.js
-2 - 
-3 - 
-4 - 
+2 - create Avatar , FileController.js , create migration (create-files) and Model 'File.js' , edit index in database
+3 - create migration 'add-avatar-field-to-users' (conexão com a tabela Users)
+4 - listagem de providers, route.js, ProviderController, app.js and others
 5 - 
 6 -
 7 -
@@ -31,6 +31,13 @@ Ordem de Processo
 18 - 
 19 -
 20 - 
+
+New table in database
+    yarn sequelize db:migrate:undo:all  
+    yarn sequelize db:migrate
+1 - yarn sequelize migration:create --name=create-files
+2 - yarn sequelize migration:create --name=add-avatar-field-to-users
+3 - 
 
 
 
