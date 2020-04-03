@@ -1,7 +1,7 @@
 Pacotes instalados
-    1 - yarn add multer
-    2 - yarn add date-fns@next
-    3 - 
+    1 - yarn add multer (Para manipulação de dados diferentes)
+    2 - yarn add date-fns@next (Para manipulação de datas)
+    3 - yarn add mongoose (Manipulação de bancos MongoDB)
     4 - 
     5 - 
     6 -
@@ -17,11 +17,11 @@ Ordem de Processo
     7 - Validações dos Agendamentos (Appointment) usando Date-fns
     8 - Mais validações na listagem de agendamentos(index)
     9 - Create ScheduleController (para fazer a lsitagens de agendamentos do Provider) (Conceitos de date between)
-    10 - 
-    11 - 
-    12 - 
-    13 - 
-    14 - 
+    10 - Subir um container MongoDB =>  docker run --name mongobarber -p 27017:27017 -d -t mongo
+    11 - Montar o Schema da notification
+    12 - criar a lista de notificações
+    13 - criar a read de notificações
+    14 - created canceled appointment
     15 - 
     16 -
     17 -
