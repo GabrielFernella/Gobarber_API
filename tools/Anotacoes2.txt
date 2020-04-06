@@ -2,8 +2,8 @@ Pacotes instalados
     1 - yarn add multer (Para manipulação de dados diferentes)
     2 - yarn add date-fns@next (Para manipulação de datas)
     3 - yarn add mongoose (Manipulação de bancos MongoDB)
-    4 - 
-    5 - 
+    4 - yarn add nodemailer
+    5 - yarn add express-handlebars nodemailer-express-handlebars
     6 -
 
 
@@ -22,12 +22,14 @@ Ordem de Processo
     12 - criar a lista de notificações
     13 - criar a read de notificações
     14 - created canceled appointment
-    15 - 
-    16 -
+    15 - biblioteca para envio de email (nodemailer), create config(mail.js), create(Mailtrap), create (lib folder) and Mail.js, edit appointmentController
+    16 -config template email (Handlebars) Edit and create more files, View(all files), lib(edit)
     17 -
     18 - 
     19 -
     20 - 
+    21 - 
+    22 - 
 
 New table in database
         yarn sequelize db:migrate:undo:all  
@@ -44,3 +46,13 @@ Mais Informações
     Protocolo de Criação
         - Criar o Model e atualizar o index do database
         - Criar o Controller e atualizando as rotas
+
+
+    Serviços de email
+        Amazon SES 
+        Mailgun
+        Sparkpost
+        
+        Mailtrap(para desenvolvedores)
+
+        Handlebars = Template engine
