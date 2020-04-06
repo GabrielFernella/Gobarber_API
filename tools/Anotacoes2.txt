@@ -4,7 +4,7 @@ Pacotes instalados
     3 - yarn add mongoose (Manipulação de bancos MongoDB)
     4 - yarn add nodemailer
     5 - yarn add express-handlebars nodemailer-express-handlebars
-    6 -
+    6 - yarn add bee-queue
 
 
 Ordem de Processo
@@ -24,12 +24,16 @@ Ordem de Processo
     14 - created canceled appointment
     15 - biblioteca para envio de email (nodemailer), create config(mail.js), create(Mailtrap), create (lib folder) and Mail.js, edit appointmentController
     16 - config template email (Handlebars) Edit and create more files, View(all files), lib(edit)
-    17 - Filas com Redis, download container redis and instalation bee-queue
+    17 - Filas com Redis, download container redis and instalation bee-queue, create Queue.js(folder lib), create jobs for second plan
     18 - 
     19 -
     20 - 
     21 - 
     22 - 
+
+    Run Aplication 
+        docker start database mongobarber redisbarber      //run databases for Aplication
+        yarn dev
 
 New table in database
         yarn sequelize db:migrate:undo:all  
