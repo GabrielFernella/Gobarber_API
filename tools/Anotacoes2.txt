@@ -23,8 +23,8 @@ Ordem de Processo
     13 - criar a read de notificações
     14 - created canceled appointment
     15 - biblioteca para envio de email (nodemailer), create config(mail.js), create(Mailtrap), create (lib folder) and Mail.js, edit appointmentController
-    16 -config template email (Handlebars) Edit and create more files, View(all files), lib(edit)
-    17 -
+    16 - config template email (Handlebars) Edit and create more files, View(all files), lib(edit)
+    17 - Filas com Redis, download container redis and instalation bee-queue
     18 - 
     19 -
     20 - 
@@ -37,7 +37,7 @@ New table in database
     1 - yarn sequelize migration:create --name=create-files
     2 - yarn sequelize migration:create --name=add-avatar-field-to-users
     3 - yarn sequelize migration:create --name=create-appointments
-    4 - 
+    4 - docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
     5 - 
     6 - 
 
@@ -56,3 +56,5 @@ Mais Informações
         Mailtrap(para desenvolvedores)
 
         Handlebars = Template engine
+
+        Sistemas de Fila para emails e outros
