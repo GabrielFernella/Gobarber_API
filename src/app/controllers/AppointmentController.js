@@ -18,7 +18,7 @@ class AppointmentController {
             order: ['date'], //ordenar
             limit:20, //limite de 20 por pagina
             offset: (page -1) * 20, //para pular 20 quando a pagina for maior que 1
-            attributes: ['id', 'date'], //atributos que são retornados
+            attributes: ['id', 'date', 'past', 'cancelable'], //atributos que são retornados
             include: [ //incluir valor de outras tabelas
                 {
                     model: User, //nome da tabela

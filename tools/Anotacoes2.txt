@@ -5,6 +5,10 @@ Pacotes instalados
     4 - yarn add nodemailer
     5 - yarn add express-handlebars nodemailer-express-handlebars
     6 - yarn add bee-queue
+    7 - npm install @sentry/node@5.15.4
+    8 - yarn add express-async-errors
+    9 - yarn add youch // para tratamento de erros
+    10 - yarn add dotenv
 
 
 Ordem de Processo
@@ -25,11 +29,10 @@ Ordem de Processo
     15 - biblioteca para envio de email (nodemailer), create config(mail.js), create(Mailtrap), create (lib folder) and Mail.js, edit appointmentController
     16 - config template email (Handlebars) Edit and create more files, View(all files), lib(edit)
     17 - Filas com Redis, download container redis and instalation bee-queue, create Queue.js(folder lib), create jobs for second plan
-    18 - 
-    19 -
-    20 - 
-    21 - 
-    22 - 
+    18 - tratamento de Exceções
+    19 - adicionado Sentry para tratamento de erros da aplicação
+    20 - Variáveis de Ambiente
+   
 
     Run Aplication 
         docker start database mongobarber redisbarber      //run databases for Aplication
@@ -42,8 +45,7 @@ New table in database
     2 - yarn sequelize migration:create --name=add-avatar-field-to-users
     3 - yarn sequelize migration:create --name=create-appointments
     4 - docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
-    5 - 
-    6 - 
+
 
 Mais Informações
 
@@ -57,8 +59,14 @@ Mais Informações
         Mailgun
         Sparkpost
         
-        Mailtrap(para desenvolvedores)
+        Mailtrap(para desenvolvedores) -> Servidor de Emails para Aplicação
 
         Handlebars = Template engine
 
         Sistemas de Fila para emails e outros
+
+
+        UnixTimaTamp - new Date().getTime()  => Executar no navegador
+
+        Sentry -> Para tratativas de Erros da aplicação
+
